@@ -1,5 +1,15 @@
+#main__services {
+    height: 65vw;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-bottom: auto;
+}
+
+
 #services {
     .container {
+        margin-top: 5rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
@@ -51,6 +61,13 @@
 /* ------------------------------------ Media Queries (Small Devices) ------------------------------------ */
 
 @media screen and (max-width: 600px) {
+    #main__services{
+        height: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: -100px;
+    }
+
     #services {
         .container {
             grid-template-columns: 1fr;

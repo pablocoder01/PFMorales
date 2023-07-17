@@ -13,7 +13,7 @@ body {
 
 .container {
     width: $container-lg;
-    margin: 0 auto;
+    margin: 1rem auto 1rem;
 }
 
 img {
@@ -35,7 +35,7 @@ section {
     & > p {
         text-align: center;
         width: 45%;
-        margin: 0.6rem auto 2.5rem;
+        margin: 0.6rem auto 1rem;
     }
  }
 
@@ -63,7 +63,7 @@ section {
 
 /* ------------------------------------ Media Queries (Small Devices) ------------------------------------ */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { 
     section {
         & > p {
             width: $container-md;

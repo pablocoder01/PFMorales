@@ -1,4 +1,6 @@
 #appointment {
+    padding-top: 7rem;
+    margin-top:auto;
     .container {
         display: grid;
         grid-template-columns: 47% 47%;
@@ -60,8 +62,17 @@
 
 /* ------------------------------------ Media Queries (Small Devices) ------------------------------------ */
 @media screen and (max-width: 600px) {
+    #main__contact{
+        height: 100%;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        margin-bottom: -100px;
+    }
+
     #appointment {
+        padding-top: 7rem;
         .container {
+            margin-top: auto;
             grid-template-columns: 1fr;
             gap: 2rem;
 

@@ -1,5 +1,14 @@
+#main__specialists {
+    height: 65vw;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-bottom: auto;
+}
+
 #specialists {
     .container { 
+        margin-top: 1rem;
         width: 68%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -27,7 +36,7 @@
             }
 
             .specialist__image {
-                height: 20rem;
+                height: 30rem;
                 position: relative;
                 border-radius: 1rem;
                 overflow: hidden;
@@ -106,6 +115,7 @@
 @media screen and (max-width: 1024px) {
     #specialists {
         .container {
+            gap: 1rem;
             grid-template-columns: 1fr 1fr;
         }
     }
@@ -114,6 +124,15 @@
 /* ------------------------------------ Media Queries (Small Devices) ------------------------------------ */
 
 @media screen and (max-width: 600px) {
+    #main__specialists{
+        height: 100%;
+        padding-top: 3rem;
+        padding-bottom: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+       
+    }
+
     #specialists {
         .container {
             grid-template-columns: 1fr;
